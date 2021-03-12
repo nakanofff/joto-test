@@ -1,0 +1,76 @@
+main {
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 12vh;
+  margin-bottom: 12vh;
+}
+
+main .title_text {
+  width: 84vw;
+  height: auto;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+main .title_text h1 {
+  color: #022136;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 2.8vw;
+  border-bottom: 0.5px solid #022136;
+  font-family: 'Kosugi', sans-serif;
+  font-weight: 400;
+}
+
+main .main_text_content {
+  width: 84vw;
+  height: auto;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+main .main_text_content p {
+  color: #022136;
+  font-size: 1vw;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+}
+
+main .sub_text_content {
+  width: 84vw;
+  height: auto;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+main .sub_text_content p {
+  color: #022136;
+  font-size: 1.2vw;
+  text-align: right;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 420px) {
+  main {
+    margin-top: 0;
+    margin-bottom: 6vh;
+  }
+  main .title_text h1 {
+    font-size: 2.3em;
+    border-bottom: 1px solid #022136;
+  }
+  main .main_text_content p {
+    font-size: 1em;
+  }
+  main .sub_text_content p {
+    font-size: 0.8em;
+  }
+}
+/*# sourceMappingURL=personal_info.css.map */
