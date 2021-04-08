@@ -158,37 +158,52 @@ main .shoplist_outer .shoplist_wrap .shoplist_content_right {
 
 #area_menu .area_menu_open {
   position: fixed;
+  width: 6vw;
+  height: 32vh;
   z-index: 300;
-  top: 50%;
+  bottom: 0;
   left: 0;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  background-color: #aaaaaa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#area_menu .area_menu_open .area_menu_line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 6vw;
+  height: 5px;
+  background-color: #022136;
+}
+
+#area_menu .area_menu_open p {
+  font-size: 1.2em;
+  color: #ffffff;
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+          writing-mode: vertical-rl;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
-#area_menu .area_menu_open .area_menu_line {
-  width: 1px;
-  height: 5vh;
-  background-color: #022136;
-  display: block;
-  margin: 0 auto;
-  border: 1px solid #fff;
-}
-
-#area_menu .area_menu_open p {
-  color: #022136;
-  font-size: 1vw;
-  margin: 0.3vw 0;
-  font-family: 'Kosugi', sans-serif;
-  font-weight: 400;
-  text-shadow: 1px 0 0 #ffffff, 0 1px 0 #ffffff, -1px 0 0 #fff, 0 -1px 0 #fff;
-}
-
-#area_menu .area_menu_open:hover {
-  left: 2%;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+#area_menu .area_menu_open:hover p {
+  -webkit-transform: translateX(1vw);
+          transform: translateX(1vw);
 }
 
 #area_menu .area_menu_wrap {
@@ -304,15 +319,14 @@ main .shoplist_outer .shoplist_wrap .shoplist_content_right {
     margin-left: 0;
   }
   #area_menu .area_menu_open {
-    left: -5%;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    width: 16vw;
   }
   #area_menu .area_menu_open .area_menu_line {
-    height: 3vh;
+    width: 16vw;
+    height: 6px;
   }
   #area_menu .area_menu_open p {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   #area_menu .area_menu_wrap {
     width: 56vw;
